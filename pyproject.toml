@@ -25,8 +25,8 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/YOUR-USERNAME/calibre-author-cleanup"
-Issues = "https://github.com/YOUR-USERNAME/calibre-author-cleanup/issues"
+Homepage = "https://github.com/gmwestrup/calibre-author-cleanup"
+Issues = "https://github.com/gmwestrup/calibre-author-cleanup/issues"
 
 [project.scripts]
 calibre-author-cleanup = "calibre_author_cleanup.cli:main"

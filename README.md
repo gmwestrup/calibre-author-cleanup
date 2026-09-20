@@ -36,7 +36,7 @@ time.
 
 ```bash
 pip install rapidfuzz
-git clone https://github.com/YOUR-USERNAME/calibre-author-cleanup.git
+git clone https://github.com/gmwestrup/calibre-author-cleanup.git
 cd calibre-author-cleanup
 pip install -e .
 ```
