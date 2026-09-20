@@ -10,3 +10,4 @@ venv/
 author_review.csv
 never_merge.txt
 always_merge.txt
+*.egg-info/
