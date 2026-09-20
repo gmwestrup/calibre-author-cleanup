@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# runtime artifacts — these are generated per-library and shouldn't be committed
+author_review.csv
+never_merge.txt
+always_merge.txt
