@@ -148,3 +148,7 @@ Raise `--threshold` for fewer, safer suggestions; lower it (and
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for a history of changes.
