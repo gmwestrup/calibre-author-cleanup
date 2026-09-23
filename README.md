@@ -1,5 +1,9 @@
 # calibre-author-cleanup
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![Status](https://img.shields.io/badge/status-beta-orange)
+
 Cluster, review, and merge duplicate author entries in a large Calibre
 library — built for libraries too big to eyeball in Manage Authors
 (tested at 100k+ books).
@@ -9,6 +13,8 @@ replacing it: use Find Duplicates for the GUI-driven merge, and this
 script for normalization, typo-level fuzzy clustering, glued co-author
 splitting, and a persistent decision log so re-runs get quieter over
 time.
+
+![Scan, review, apply workflow](assets/workflow.svg)
 
 ## What it catches
 
@@ -67,7 +73,11 @@ calibre-author-cleanup scan --library /path/to/CalibreLibrary
 #    (leave blank to ignore for now)
 #    You can also edit the `canonical` value on any row to pick a
 #    different winning spelling for that group.
+```
 
+![Example author_review.csv](assets/review-csv-example.svg)
+
+```bash
 # 3. Preview the changes (always the default — nothing is written)
 calibre-author-cleanup apply --library /path/to/CalibreLibrary
 

@@ -1,0 +1,50 @@
+<svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="900" height="260" fill="#f6f8fa" rx="12"/>
+
+  <!-- Step 1: Scan -->
+  <rect x="30" y="60" width="220" height="140" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="140" y="95" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2328">1. scan</text>
+  <text x="140" y="122" text-anchor="middle" font-size="12" fill="#57606a">Pull authors via</text>
+  <text x="140" y="140" text-anchor="middle" font-size="12" fill="#57606a">calibredb, normalize</text>
+  <text x="140" y="158" text-anchor="middle" font-size="12" fill="#57606a">names, cluster fuzzy</text>
+  <text x="140" y="176" text-anchor="middle" font-size="12" fill="#57606a">matches</text>
+  <rect x="55" y="185" width="170" height="1" fill="#d0d7de"/>
+  <text x="140" y="200" text-anchor="middle" font-size="11" font-family="Consolas, monospace" fill="#0969da">author_review.csv</text>
+
+  <!-- arrow 1 -->
+  <line x1="255" y1="130" x2="315" y2="130" stroke="#8c959f" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 2: Review -->
+  <rect x="320" y="60" width="220" height="140" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="430" y="95" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2328">2. review</text>
+  <text x="430" y="122" text-anchor="middle" font-size="12" fill="#57606a">You edit the CSV:</text>
+  <text x="430" y="140" text-anchor="middle" font-size="12" fill="#57606a">mark merge / split / skip,</text>
+  <text x="430" y="158" text-anchor="middle" font-size="12" fill="#57606a">adjust the canonical</text>
+  <text x="430" y="176" text-anchor="middle" font-size="12" fill="#57606a">spelling per group</text>
+
+  <!-- arrow 2 -->
+  <line x1="545" y1="130" x2="605" y2="130" stroke="#8c959f" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 3: Apply -->
+  <rect x="610" y="60" width="220" height="140" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+  <text x="720" y="95" text-anchor="middle" font-size="15" font-weight="700" fill="#1f2328">3. apply</text>
+  <text x="720" y="122" text-anchor="middle" font-size="12" fill="#57606a">Dry run by default;</text>
+  <text x="720" y="140" text-anchor="middle" font-size="12" fill="#57606a">--commit writes merges</text>
+  <text x="720" y="158" text-anchor="middle" font-size="12" fill="#57606a">back through calibredb,</text>
+  <text x="720" y="176" text-anchor="middle" font-size="12" fill="#57606a">co-authors preserved</text>
+  <rect x="635" y="185" width="170" height="1" fill="#d0d7de"/>
+  <text x="720" y="200" text-anchor="middle" font-size="11" font-family="Consolas, monospace" fill="#1a7f37">--commit</text>
+
+  <!-- feedback loop -->
+  <path d="M 720 60 C 720 20, 140 20, 140 60" fill="none" stroke="#8c959f" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#arrow-light)"/>
+  <text x="430" y="18" text-anchor="middle" font-size="11" fill="#8c959f">decisions persist to always_merge.txt / never_merge.txt for the next scan</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#8c959f"/>
+    </marker>
+    <marker id="arrow-light" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#8c959f"/>
+    </marker>
+  </defs>
+</svg>

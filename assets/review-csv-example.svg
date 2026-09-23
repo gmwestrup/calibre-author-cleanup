@@ -1,0 +1,85 @@
+<svg viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" font-family="Consolas, Menlo, monospace">
+  <rect x="0" y="0" width="900" height="300" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5" rx="10"/>
+
+  <!-- header row -->
+  <rect x="0" y="0" width="900" height="36" fill="#f6f8fa" rx="10"/>
+  <rect x="0" y="24" width="900" height="12" fill="#f6f8fa"/>
+  <text x="20"  y="24" font-size="12.5" font-weight="700" fill="#1f2328">group</text>
+  <text x="80"  y="24" font-size="12.5" font-weight="700" fill="#1f2328">confidence</text>
+  <text x="200" y="24" font-size="12.5" font-weight="700" fill="#1f2328">action</text>
+  <text x="290" y="24" font-size="12.5" font-weight="700" fill="#1f2328">canonical</text>
+  <text x="480" y="24" font-size="12.5" font-weight="700" fill="#1f2328">variant</text>
+  <text x="700" y="24" font-size="12.5" font-weight="700" fill="#1f2328">books</text>
+  <line x1="0" y1="36" x2="900" y2="36" stroke="#d0d7de" stroke-width="1.5"/>
+
+  <!-- rows -->
+  <!-- group 1: high, pre-approved -->
+  <g>
+    <rect x="0" y="36" width="900" height="30" fill="#f0fff4"/>
+    <text x="20" y="56" font-size="12.5" fill="#1f2328">1</text>
+    <text x="80" y="56" font-size="12.5" fill="#1a7f37" font-weight="700">high</text>
+    <text x="200" y="56" font-size="12.5" fill="#1a7f37" font-weight="700">merge</text>
+    <text x="290" y="56" font-size="12.5" fill="#1f2328">J.R.R. Tolkien</text>
+    <text x="480" y="56" font-size="12.5" fill="#57606a">JRR Tolkien</text>
+    <text x="700" y="56" font-size="12.5" fill="#57606a">142</text>
+  </g>
+  <g>
+    <rect x="0" y="66" width="900" height="30" fill="#f0fff4"/>
+    <text x="20" y="86" font-size="12.5" fill="#1f2328">1</text>
+    <text x="80" y="86" font-size="12.5" fill="#1a7f37" font-weight="700">high</text>
+    <text x="200" y="86" font-size="12.5" fill="#1a7f37" font-weight="700">merge</text>
+    <text x="290" y="86" font-size="12.5" fill="#1f2328">J.R.R. Tolkien</text>
+    <text x="480" y="86" font-size="12.5" fill="#57606a">Tolkien, J. R. R.</text>
+    <text x="700" y="86" font-size="12.5" fill="#57606a">31</text>
+  </g>
+
+  <!-- group 2: medium, needs review -->
+  <g>
+    <rect x="0" y="96" width="900" height="30" fill="#fffdf0"/>
+    <text x="20" y="116" font-size="12.5" fill="#1f2328">2</text>
+    <text x="80" y="116" font-size="12.5" fill="#9a6700" font-weight="700">medium</text>
+    <text x="200" y="116" font-size="12.5" fill="#bf8700">&#8592; merge?</text>
+    <text x="290" y="116" font-size="12.5" fill="#1f2328">Brandon Sanderson</text>
+    <text x="480" y="116" font-size="12.5" fill="#57606a">Brandon Sandersen</text>
+    <text x="700" y="116" font-size="12.5" fill="#57606a">3</text>
+  </g>
+
+  <!-- group 3: low, gray zone -->
+  <g>
+    <rect x="0" y="126" width="900" height="30" fill="#fff8f6"/>
+    <text x="20" y="146" font-size="12.5" fill="#1f2328">3</text>
+    <text x="80" y="146" font-size="12.5" fill="#cf222e" font-weight="700">low</text>
+    <text x="200" y="146" font-size="12.5" fill="#57606a">(blank)</text>
+    <text x="290" y="146" font-size="12.5" fill="#1f2328">Chris Ryan</text>
+    <text x="480" y="146" font-size="12.5" fill="#57606a">Chris Ryann</text>
+    <text x="700" y="146" font-size="12.5" fill="#57606a">1</text>
+  </g>
+
+  <!-- group 4: glued -->
+  <g>
+    <rect x="0" y="156" width="900" height="30" fill="#f6f0ff"/>
+    <text x="20" y="176" font-size="12.5" fill="#1f2328">4</text>
+    <text x="80" y="176" font-size="12.5" fill="#8250df" font-weight="700">glued</text>
+    <text x="200" y="176" font-size="12.5" fill="#8250df">&#8592; split</text>
+    <text x="290" y="176" font-size="12.5" fill="#1f2328">John Smith &amp; Jane Doe</text>
+    <text x="480" y="176" font-size="12.5" fill="#57606a">John Smith and Jane Doe</text>
+    <text x="700" y="176" font-size="12.5" fill="#57606a">1</text>
+  </g>
+
+  <line x1="0" y1="186" x2="900" y2="186" stroke="#d0d7de" stroke-width="1.5"/>
+
+  <!-- legend -->
+  <text x="20" y="215" font-size="12" fill="#57606a">You edit the </text>
+  <text x="94" y="215" font-size="12" font-weight="700" fill="#1f2328">action</text>
+  <text x="140" y="215" font-size="12" fill="#57606a">column (merge / split / skip), then run </text>
+  <text x="424" y="215" font-size="12" font-family="Consolas, monospace" fill="#0969da">apply --commit</text>
+
+  <circle cx="24" cy="240" r="5" fill="#1a7f37"/>
+  <text x="36" y="245" font-size="11.5" fill="#57606a">high — pre-approved, same name after normalization</text>
+  <circle cx="24" cy="260" r="5" fill="#9a6700"/>
+  <text x="36" y="265" font-size="11.5" fill="#57606a">medium — strong fuzzy match, skim and approve</text>
+  <circle cx="440" cy="240" r="5" fill="#cf222e"/>
+  <text x="452" y="245" font-size="11.5" fill="#57606a">low — gray zone, check carefully</text>
+  <circle cx="440" cy="260" r="5" fill="#8250df"/>
+  <text x="452" y="265" font-size="11.5" fill="#57606a">glued — one string holding multiple authors</text>
+</svg>
